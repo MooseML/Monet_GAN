@@ -1,0 +1,12 @@
+tensorflow==2.13.0
+tensorflow-addons
+opencv-python
+numpy
+matplotlib
+pandas
+scipy
+Pillow
+seaborn
+jupyterlab
+tensorboard
+kaggle
