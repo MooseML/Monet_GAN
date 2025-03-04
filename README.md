@@ -29,13 +29,9 @@ pip install -r requirements.txt
 ```
 
 ## Running the Model
-To train the CycleGAN model, use:
+To train and generate Monet-style paintings, open and run the Jupyter notebook:
 ```sh
-python train.py
-```
-To generate Monet-style paintings:
-```sh
-python generate.py --input_dir=data/photo_jpg --output_dir=images
+jupyter notebook notebooks/Monet-GAN.ipynb
 ```
 
 ## Folder Structure
@@ -43,6 +39,7 @@ python generate.py --input_dir=data/photo_jpg --output_dir=images
 - `logs/` - Stores training logs (ignored in Git).
 - `images/` - Stores generated images (ignored in Git).
 - `models/` - Pre-trained CycleGAN models.
+- `notebooks/` - Jupyter notebooks for training and inference.
 - `src/` - Core implementation (training, inference, loss functions, etc.).
 
 ## Results & Observations
@@ -57,5 +54,7 @@ python generate.py --input_dir=data/photo_jpg --output_dir=images
 3. Testing alternative architectures (e.g., Swin Transformer-based GANs).
 
 ## References
-- Arjovsky, M., et al. (2017). *Wasserstein GAN*. [arXiv:1701.07875](https://arxiv.org/abs/1701.07875)
-- Jang, A. (n.d.). *Monet CycleGAN Tutorial*. Kaggle. Retrieved from [here](https://www.kaggle.com/code/amyjang/monet-cyclegan-tutorial)
+- Arjovsky, M., Chintala, S., & Bottou, L. (2017). *Wasserstein GAN*. [arXiv:1701.07875](https://arxiv.org/abs/1701.07875)
+- Eevee. (n.d.). *Perlin noise*. GitHub. Retrieved from [https://gist.github.com/eevee/26f547457522755cb1fb8739d0ea89a1](https://gist.github.com/eevee/26f547457522755cb1fb8739d0ea89a1)
+- GeeksforGeeks. (2024, January 4). *Wasserstein Generative Adversarial Networks (WGANs) Convergence and Optimization*. Retrieved from [https://www.geeksforgeeks.org/wasserstein-generative-adversarial-networks-wgans-convergence-and-optimization/](https://www.geeksforgeeks.org/wasserstein-generative-adversarial-networks-wgans-convergence-and-optimization/)
+- Jang, A. (n.d.). *Monet CycleGAN Tutorial*. Kaggle. Retrieved from [https://www.kaggle.com/code/amyjang/monet-cyclegan-tutorial](https://www.kaggle.com/code/amyjang/monet-cyclegan-tutorial)
